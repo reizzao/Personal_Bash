@@ -5,45 +5,42 @@ export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim r
 export MYVIMRC='~/Personal_Vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
 
 # OBS: VARIAVEL $HOME == /home/rzj/
+
+# COMANDOS PERSONAL
+alias propaga="source ~/.bashrc"
+
 #
-# ACESSOS COM CD
-export obashrc="~/.bashrc"
-
-export ogo="$HOME/..backend/golang"
-export olvim="$HOME/.config/lvim/"
-export ogit="$HOME/..git/"
-export omethods="$HOME/..git/methods"
-# export obackend="$HOME/..backend/"
-# export odotnet="$HOME/..backend/dotnet/"
-# export odart="$HOME/..frontend/..dart/DartBase/"
-# export odeno="$HOME/..backend/deno/"
-# export odocker="$HOME/..backend/docker/"
-# export onode="$HOME/..backend/node/"
-# export opython="$HOME/..backend/python/"
-# export opersistencia="/$HOME/..backend/persistencia/"
-# export oeditores="/$HOME/..backend/editores_treinos/"
-# export obackups="/$HOME/..backups/"
-# export odotenv="$HOME/dotnet7/"
-
-# COMANDOS_ALIAS ==================================
+# ACESSOS COM CD $var:: Configurar com 'e' de explorer antes do <artefato> :: acessar: cd $oApelido
+export ebash="$HOME/Personal_Bash/"
+export evim="$HOME/Personal_Vim/"
+export elvim="$HOME/.config/lvim/"
+export egit="$HOME/..git/"
+export emethods="$HOME/..git/methods"
+export envim="$HOME/.config/nvim/"
 
 #  MESTRAS :: CADA UM CRIAR A MESTRA - 'o' ABRIR - 'e' EDITAR
-export pgm="$HOME/..programacao/"
-export EDITOR="nvim"
+export epgm="$HOME/..programacao/"
+export EDITOR_VIM="vim"
+export EDITOR_NVIM="nvim"
 
 
-# ABRIR :: ACESSO SEM CD
-alias opgm="cd $pgm"
-alias ncpp="cd ~/..backend/cpp/"
-alias envim="$EDITOR ~/.config/nvim/"
-alias onvim="cd ~/.config/nvim/"
-alias config_tema="cd ~/.config/nvim/colors/"
+# ABRIR :: ACESSO SEM CD, configurar add $ antes da MESTRA, usar: 'o' antes da var
+alias opgm="cd $epgm"
+alias ocpp="cd ~/..backend/cpp/"
+alias onvim="$EDITOR_NVIM ~/.config/nvim/"
+alias otema_nvim="cd ~/.config/nvim/colors/"
 
-# EDITAR
-alias etester="$EDITOR ~/tester/"
-alias epgm="$EDITOR $pgm"
-alias enotas="$EDITOR $pgm/_notas/"
-alias ebash="$EDITOR $obashrc"
-alias evim="$EDITOR ~/.vimrc"
-alias etema="$EDITOR ~/.config/nvim/colors/"
+# EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
+alias vtester="$EDITOR_VIM ~/tester/"
+alias vpgm="$EDITOR_VIM $epgm"
+alias vnotas="$EDITOR_VIM $epgm/_notas/"
+alias vbash="$EDITOR_VIM $ebash"
+alias vtema="$EDITOR_VIM ~/.config/nvim/colors/"
+
+# EDITAR ABRINDO COM O EDITOR_NVIM CONFIGURADO, confg com 'n' antes da var
+alias ntester="$EDITOR_NVIM ~/tester/"
+alias npgm="$EDITOR_NVIM $epgm"
+alias nnotas="$EDITOR_NVIM $epgm/_notas/"
+alias nbash="$EDITOR_NVIM $ebash"
+alias ntema="$EDITOR_NVIM ~/.config/nvim/colors/"
 
