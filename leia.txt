@@ -1,0 +1,21 @@
+
+# *** BASHRC PERSONALIZADO ***
+# Para funcionar este arquivo no .bashrc add estas chamadas:
+# Repo Personal_Bash : (git clone https://github.com/rzjprogramador/Personal_Bash)
+# faça o clone deste repo na raiz do home linux e adicione no .bashrc estas linhas que chamam este repo clonado:
+
+#  INSERIR NO .BASHRC:
+
+# ==== CONFIGURACOES PERSONALIZADAS BASH PUXADAS DE :: Personal_Bash/.bash_person_rzj
+# include .bashrc if it exists *** VERIFICAR SE O ARQUIVO EXIST :
+
+if [ -f $HOME/Personal_Bash/.bash_person_rzj ]; then
+    . $HOME/Personal_Bash/.bash_person_rzj
+fi
+
+# CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
+stty -ixon
+
+# FIM PERSONALIZACAO BASHRC -- RESTANTE NO BASH PERSONALIZADO ===============
+# ==============================================================================================
+

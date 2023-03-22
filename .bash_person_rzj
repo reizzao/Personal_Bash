@@ -1,6 +1,6 @@
-# MUDAR LOCAL VIM_RC :: PARA PASTA HOME/.VIM AO INVES DO .VIMRC NA RAIZ
+# MUDAR LOCAL VIM_RC :: PARA PASTA Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
 export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
-export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
+export MYVIMRC='~/Personal_Vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
 
 # OBS: VARIAVEL $HOME == /home/rzj/
 #
