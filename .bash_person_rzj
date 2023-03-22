@@ -10,15 +10,15 @@ export MYVIMRC='~/Personal_Vim/.vimrc'  # apontando caminho do vimrc que configu
 alias propaga="source ~/.bashrc"
 
 #
-# ACESSOS COM CD $var:: Configurar com 'e' de explorer antes do <artefato> :: acessar: cd $oApelido
-export ebash="$HOME/Personal_Bash/"
-export evim="$HOME/Personal_Vim/"
-export elvim="$HOME/.config/lvim/"
-export egit="$HOME/..git/"
-export emethods="$HOME/..git/methods"
-export envim="$HOME/.config/nvim/"
+# ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
+export cbash="$HOME/Personal_Bash/"
+export cvim="$HOME/Personal_Vim/"
+export clvim="$HOME/.config/lvim/"
+export cgit="$HOME/..git/"
+export cmethods="$HOME/..git/methods"
+export cnvim="$HOME/.config/nvim/"
 
-#  MESTRAS :: CADA UM CRIAR A MESTRA - 'o' ABRIR - 'e' EDITAR
+#  MESTRAS :: CADA UM CRIAR A MESTRA - 'c' ABRIR - 'e' EDITAR
 export epgm="$HOME/..programacao/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
@@ -29,18 +29,19 @@ alias opgm="cd $epgm"
 alias ocpp="cd ~/..backend/cpp/"
 alias onvim="$EDITOR_NVIM ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
+alias ovim="cd ~/Personal_Vim/"
 
 # EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
 alias vtester="$EDITOR_VIM ~/tester/"
 alias vpgm="$EDITOR_VIM $epgm"
 alias vnotas="$EDITOR_VIM $epgm/_notas/"
-alias vbash="$EDITOR_VIM $ebash"
+alias vbash="$EDITOR_VIM $cbash"
 alias vtema="$EDITOR_VIM ~/.config/nvim/colors/"
 
 # EDITAR ABRINDO COM O EDITOR_NVIM CONFIGURADO, confg com 'n' antes da var
 alias ntester="$EDITOR_NVIM ~/tester/"
 alias npgm="$EDITOR_NVIM $epgm"
 alias nnotas="$EDITOR_NVIM $epgm/_notas/"
-alias nbash="$EDITOR_NVIM $ebash"
+alias nbash="$EDITOR_NVIM $cbash"
 alias ntema="$EDITOR_NVIM ~/.config/nvim/colors/"
 
