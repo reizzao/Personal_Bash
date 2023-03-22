@@ -1,0 +1,47 @@
+# MUDAR LOCAL VIM_RC :: PARA PASTA HOME/.VIM AO INVES DO .VIMRC NA RAIZ
+export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
+export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
+
+# OBS: VARIAVEL $HOME == /home/rzj/
+#
+# ACESSOS COM CD
+export obashrc="~/.bashrc"
+
+export ogo="$HOME/..backend/golang"
+export olvim="$HOME/.config/lvim/"
+export ogit="$HOME/..git/"
+export omethods="$HOME/..git/methods"
+# export obackend="$HOME/..backend/"
+# export odotnet="$HOME/..backend/dotnet/"
+# export odart="$HOME/..frontend/..dart/DartBase/"
+# export odeno="$HOME/..backend/deno/"
+# export odocker="$HOME/..backend/docker/"
+# export onode="$HOME/..backend/node/"
+# export opython="$HOME/..backend/python/"
+# export opersistencia="/$HOME/..backend/persistencia/"
+# export oeditores="/$HOME/..backend/editores_treinos/"
+# export obackups="/$HOME/..backups/"
+# export odotenv="$HOME/dotnet7/"
+
+# COMANDOS_ALIAS ==================================
+
+#  MESTRAS :: CADA UM CRIAR A MESTRA - 'o' ABRIR - 'e' EDITAR
+export pgm="$HOME/..programacao/"
+export EDITOR="nvim"
+
+
+# ABRIR :: ACESSO SEM CD
+alias opgm="cd $pgm"
+alias ncpp="cd ~/..backend/cpp/"
+alias envim="$EDITOR ~/.config/nvim/"
+alias onvim="cd ~/.config/nvim/"
+alias config_tema="cd ~/.config/nvim/colors/"
+
+# EDITAR
+alias etester="$EDITOR ~/tester/"
+alias epgm="$EDITOR $pgm"
+alias enotas="$EDITOR $pgm/_notas/"
+alias ebash="$EDITOR $obashrc"
+alias evim="$EDITOR ~/.vimrc"
+alias etema="$EDITOR ~/.config/nvim/colors/"
+
