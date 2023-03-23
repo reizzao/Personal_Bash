@@ -32,6 +32,7 @@ alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/Personal_Vim/"
 
 # EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
+alias vvimrc="$EDITOR_VIM $cvim/.vimrc"
 alias vtester="$EDITOR_VIM ~/tester/"
 alias vpgm="$EDITOR_VIM $epgm"
 alias vnotas="$EDITOR_VIM $epgm/_notas/"
