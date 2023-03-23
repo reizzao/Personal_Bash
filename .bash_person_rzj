@@ -1,4 +1,5 @@
-# CONFIGS DO .VIMRC ESTAO NO ARQUIVO PERSONALIZADO BASH EM : /$HOME/Personal_Bash/.bash_person_rzj
+#C ONFIGS DO .VIMRC ESTAO NO ARQUIVO PERSONALIZADO BASH EM : /$HOME/Personal_Bash/.bash_person_rzj
+#rer arquivos >> NERDTree :: c-n
 
 # MUDAR LOCAL VIM_RC :: PARA PASTA Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
 export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
@@ -7,21 +8,25 @@ export MYVIMRC='~/Personal_Vim/.vimrc'  # apontando caminho do vimrc que configu
 # OBS: VARIAVEL $HOME == /home/rzj/
 
 # COMANDOS PERSONAL
-alias propaga="source ~/.bashrc"
+alias propagar="source ~/.bashrc"
+
+# VARS DE USO
+export TESTER_TS="~/tester/1.ts"
 
 #
 # ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
-export cbash="$HOME/Personal_Bash/"
-export cvim="$HOME/Personal_Vim/"
-export clvim="$HOME/.config/lvim/"
-export cgit="$HOME/..git/"
+export cbash="$HOME/Personal_Bash"
+export cvim="$HOME/Personal_Vim"
+export clvim="$HOME/.config/lvim"
+export cgit="$HOME/..git"
 export cmethods="$HOME/..git/methods"
-export cnvim="$HOME/.config/nvim/"
+export cnvim="$HOME/.config/nvim"
 
 #  MESTRAS :: CADA UM CRIAR A MESTRA - 'c' ABRIR - 'e' EDITAR
 export epgm="$HOME/..programacao/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
+
 
 
 # ABRIR :: ACESSO SEM CD, configurar add $ antes da MESTRA, usar: 'o' antes da var
@@ -31,16 +36,18 @@ alias onvim="$EDITOR_NVIM ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/Personal_Vim/"
 
+# DUPLICAR OS ALIASES DE VIM PARA NVIM ::
 # EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
-alias vvimrc="$EDITOR_VIM $cvim/.vimrc"
-alias vtester="$EDITOR_VIM ~/tester/"
+alias vvim="$EDITOR_VIM $cvim/.vimrc"
+alias vtester="$EDITOR_VIM $TESTER_TS"
 alias vpgm="$EDITOR_VIM $epgm"
 alias vnotas="$EDITOR_VIM $epgm/_notas/"
-alias vbash="$EDITOR_VIM $cbash"
+alias vbash="$EDITOR_VIM $cbash/.bash_person_rzj"
 alias vtema="$EDITOR_VIM ~/.config/nvim/colors/"
 
 # EDITAR ABRINDO COM O EDITOR_NVIM CONFIGURADO, confg com 'n' antes da var
-alias ntester="$EDITOR_NVIM ~/tester/"
+alias nnvim="$EDITOR_NVIM ~/.config/nvim/init.lua"
+alias ntester="$EDITOR_NVIM $TESTER_TS"
 alias npgm="$EDITOR_NVIM $epgm"
 alias nnotas="$EDITOR_NVIM $epgm/_notas/"
 alias nbash="$EDITOR_NVIM $cbash"
