@@ -1,9 +1,9 @@
-#C ONFIGS DO .VIMRC ESTAO NO ARQUIVO PERSONALIZADO BASH EM : /$HOME/Personal_Bash/.bash_person_rzj
-#rer arquivos >> NERDTree :: c-n
+# CONFIGS DO .VIMRC ESTAO NO ARQUIVO PERSONALIZADO BASH EM : /$HOME/Personal_Bash/.bash_person_rzj
+# explorador arquivos >> NERDTree :: c-n
 
 # MUDAR LOCAL VIM_RC :: PARA PASTA Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
 export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
-export MYVIMRC='~/Personal_Vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
+export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
 
 # OBS: VARIAVEL $HOME == /home/rzj/
 
@@ -16,7 +16,7 @@ export TESTER_TS="~/tester/1.ts"
 #
 # ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
 export cbash="$HOME/Personal_Bash"
-export cvim="$HOME/Personal_Vim"
+export cvim="$HOME/.vim"
 export clvim="$HOME/.config/lvim"
 export cgit="$HOME/..git"
 export cmethods="$HOME/..git/methods"
@@ -26,6 +26,7 @@ export cnvim="$HOME/.config/nvim"
 export epgm="$HOME/..programacao/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
+export EDITOR_CODE="code"
 
 
 
@@ -34,7 +35,7 @@ alias opgm="cd $epgm"
 alias ocpp="cd ~/..backend/cpp/"
 alias onvim="$EDITOR_NVIM ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
-alias ovim="cd ~/Personal_Vim/"
+alias ovim="cd ~/.vim/"
 
 # DUPLICAR OS ALIASES DE VIM PARA NVIM ::
 # EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
@@ -52,4 +53,12 @@ alias npgm="$EDITOR_NVIM $epgm"
 alias nnotas="$EDITOR_NVIM $epgm/_notas/"
 alias nbash="$EDITOR_NVIM $cbash"
 alias ntema="$EDITOR_NVIM ~/.config/nvim/colors/"
+
+# EDITAR ABRINDO COM O VSCODE CONFIGURADO, confg com 'c' antes da var
+alias cnvim="$EDITOR_CODE ~/.config/nvim/init.lua"
+alias ctester="$EDITOR_CODE $TESTER_TS"
+alias cpgm="$EDITOR_CODE $epgm"
+alias cnotas="$EDITOR_CODE $epgm/_notas/"
+alias cbash="$EDITOR_CODE $cbash/.bash_person_rzj"
+alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
 
