@@ -3,7 +3,8 @@
 
 # MUDAR LOCAL VIM_RC :: PARA PASTA Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
 export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
-export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
+export MYVIMRC='~/.config/nvim/init.lua'  # apontando o nvim
+# export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
 
 # OBS: VARIAVEL $HOME == /home/rzj/
 
@@ -61,4 +62,6 @@ alias cpgm="$EDITOR_CODE $epgm"
 alias cnotas="$EDITOR_CODE $epgm/_notas/"
 alias cbash="$EDITOR_CODE $cbash/.bash_person_rzj"
 alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
+
+source ~/.bashrc
 
