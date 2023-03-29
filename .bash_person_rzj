@@ -34,7 +34,7 @@ export EDITOR_CODE="code"
 # ABRIR :: ACESSO SEM CD, configurar add $ antes da MESTRA, usar: 'o' antes da var
 alias opgm="cd $epgm"
 alias ocpp="cd ~/..backend/cpp/"
-alias onvim="$EDITOR_NVIM ~/.config/nvim/"
+alias onvim="cd ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/.vim/"
 
@@ -63,5 +63,6 @@ alias cnotas="$EDITOR_CODE $epgm/_notas/"
 alias cbash="$EDITOR_CODE $cbash/.bash_person_rzj"
 alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
 
+# RESTARTAR PROPAGAR AUTOMATICAMENTE O BASH - OBS: TEM QUE AFECAHR E REABRIR O TERMINAL
 source ~/.bashrc
 
