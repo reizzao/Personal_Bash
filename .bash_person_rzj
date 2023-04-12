@@ -25,6 +25,7 @@ export ebash="$HOME/Personal_Bash/"
 export egit="$HOME/..Github/"
 export evscode="$HOME/.config/Code/User/"
 export egitall="$HOME/..gitAll/"
+export epreferencias="$HOME/..gitAll/preferencias/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
 export EDITOR_CODE="code"
@@ -42,6 +43,7 @@ alias onvim="cd ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/.vim/"
 alias ovscode="cd $evscode"
+alias opreferencias="cd $epreferencias"
 
 # DUPLICAR OS ALIASES DE VIM PARA NVIM ::
 # EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
