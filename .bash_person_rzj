@@ -20,7 +20,10 @@ export cgit="$HOME/..git"
 export cnvim="$HOME/.config/nvim"
 
 #  MESTRAS :: CADA UM CRIAR A MESTRA - 'c' ABRIR - 'e' EDITAR
-export epgm="$HOME/..programacao/"
+export epgm="$HOME/..pgm/"
+export ebash="$HOME/Personal_Bash/"
+export egit="$HOME/..Github/"
+export egitbase="$HOME/..git_base/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
 export EDITOR_CODE="code"
@@ -29,6 +32,9 @@ export EDITOR_CODE="code"
 
 # ABRIR :: ACESSO SEM CD, configurar add $ antes da MESTRA, usar: 'o' antes da var
 alias opgm="cd $epgm"
+alias obash="cd $ebash"
+alias ogit="cd $egit"
+alias ogitbase="cd $egitbase"
 alias obash_rzj="cd ~/Personal_Bash"
 alias ocpp="cd ~/..backend/cpp/"
 alias onvim="cd ~/.config/nvim/"
