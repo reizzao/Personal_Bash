@@ -23,6 +23,7 @@ export cnvim="$HOME/.config/nvim"
 export epgm="$HOME/..pgm/"
 export ebash="$HOME/Personal_Bash/"
 export egit="$HOME/..Github/"
+export evscode="$HOME/.config/Code/User/"
 export egitall="$HOME/..gitAll/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
@@ -40,6 +41,7 @@ alias ocpp="cd ~/..backend/cpp/"
 alias onvim="cd ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/.vim/"
+alias ovscode="cd $evscode"
 
 # DUPLICAR OS ALIASES DE VIM PARA NVIM ::
 # EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
