@@ -75,3 +75,14 @@ alias cpgm="$EDITOR_CODE $epgm"
 alias cnotas="$EDITOR_CODE $epgm/_notas/"
 alias cbash="$EDITOR_CODE $cbash/.bash_person_rzj"
 alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
+
+# FUNCOES_RZJ
+run_graphql() {
+  deno run --allow-net --allow-read --allow-env $1
+}
+# comando_original: deno run --allow-net --allow-read --allow-env main.ts
+# para usar chame a funcao e de o argumento: main.ts
+
+run_test_deno() {
+  deno test --watch
+}
