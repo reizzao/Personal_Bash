@@ -9,7 +9,7 @@ export MYVIMRC='~/.config/nvim/init.lua'  # apontando o nvim
 # OBS: VARIAVEL $HOME == /home/rzj/
 
 # COMANDOS PERSONAL
-alias propagar="source ~/.bashrc"
+alias propag="source ~/.bashrc"
 
 #
 # ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
@@ -79,6 +79,16 @@ alias cbash="$EDITOR_CODE $cbash/.bash_person_rzj"
 alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
 
 # FUNCOES_RZJ
+lf() {
+  compgen -A function
+  # listar todas funcoes no shell
+}
+
+lfn() {
+  set | grep $1
+  # listar todas funcoes por nome_passado : lfn "Deno"
+}
+
 DenoRunGql() {
   deno run --allow-net --allow-read --allow-env $1
 }
