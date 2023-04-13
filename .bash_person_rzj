@@ -29,6 +29,7 @@ export egitestes="$HOME/..gitAll/gitestes"
 export epreferencias="$HOME/..gitAll/preferencias/"
 export eimplementashow="$HOME/..gitAll/implementashow/"
 export ebackups="$HOME/..backups/"
+export etester="$HOME/..tester/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
 export EDITOR_CODE="code"
@@ -42,6 +43,7 @@ alias ogitall="cd $egitall"
 alias ogitbase="cd $egitbase"
 alias ogitestes="cd $egitestes"
 alias obackups="cd $ebackups"
+alias otester="cd $etester"
 alias oimplementashow="cd $eimplementashow"
 alias obash_rzj="cd ~/Personal_Bash"
 alias ocpp="cd ~/..backend/cpp/"
@@ -77,12 +79,15 @@ alias cbash="$EDITOR_CODE $cbash/.bash_person_rzj"
 alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
 
 # FUNCOES_RZJ
-run_graphql() {
+DenoRunGql() {
   deno run --allow-net --allow-read --allow-env $1
 }
-# comando_original: deno run --allow-net --allow-read --allow-env main.ts
-# para usar chame a funcao e de o argumento: main.ts
+# para usar chame a funcao e de o argumente o arquivo .ts a ser executado: ex: main.ts
 
-run_test_deno() {
+DenoRun() {
+  deno run --watch $1
+}
+
+DenoRunTest() {
   deno test --watch
 }
