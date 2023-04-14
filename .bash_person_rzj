@@ -95,8 +95,13 @@ DenoRunGql() {
 # para usar chame a funcao e de o argumente o arquivo .ts a ser executado: ex: main.ts
 
 DenoRun() {
+  deno run -A $1
+  # run sem watch: -A da todas permissoes no deno , que é abreviacao para o --allow-all / --permitir todos
+}
+
+DenoRunW() {
   deno run -A --watch $1
-  # -A da todas permissoes no deno , que é abreviacao para o --allow-all / --permitir todos
+  # run com watch: -A da todas permissoes no deno , que é abreviacao para o --allow-all / --permitir todos
 }
 
 DenoRunTest() {
