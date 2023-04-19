@@ -87,6 +87,10 @@ alias cnotas="$EDITOR_CODE $epgm/_notas/"
 alias cbash="$EDITOR_CODE $cbash/.bash_person_rzj"
 alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
 
+# sistema
+# atualizar sudo apt get
+alias upup="sudo bash -c 'apt-get update && apt-get upgrade'"
+
 # FUNCOES_RZJ
 lf() {
   compgen -A function
