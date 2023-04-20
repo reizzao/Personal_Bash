@@ -19,6 +19,7 @@ export MYVIMRC='~/.config/nvim/init.vim'
 
 # COMANDOS PERSONAL
 alias propag="source ~/.bashrc"
+alias vi="nvim"
 
 #
 # ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
@@ -123,4 +124,16 @@ DenoRunW() {
 
 DenoRunTest() {
   deno test --watch
+}
+
+keyvs() {
+  $1 ~/.config/Code/User/keybindings.json
+}
+
+keyvi() {
+  $1 ~/.config/nvim/keys/mappings.vim
+}
+
+exbash() {
+  $1 ~/Personal_Bash/.bash_person_rzj
 }
