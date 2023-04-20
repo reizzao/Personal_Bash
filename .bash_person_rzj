@@ -8,9 +8,11 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # explorador arquivos >> NERDTree :: c-n
 
-# MUDAR LOCAL VIM_RC :: PARA PASTA Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
+# MUDAR LOCAL VIM_RC :: PARA PASTA ~/Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
 export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
-export MYVIMRC='~/.config/nvim/init.lua'  # apontando o nvim
+export MYVIMRC='~/.config/nvim/init.vim'
+# apontando o arquivo init - se for conforme a extensao em uso .vim ou .lua e depois propag.
+
 # export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
 
 # OBS: VARIAVEL $HOME == /home/rzj/
@@ -55,7 +57,7 @@ alias ogit="cd $egit"
 alias ogitestes="cd $egitestes"
 alias obackups="cd $ebackups"
 alias otester="cd $etester"
-alias oimplementashow="cd $eimplementashow"
+alias oshow="cd $eimplementashow"
 alias obash_rzj="cd ~/Personal_Bash"
 alias ocpp="cd ~/..backend/cpp/"
 alias onvim="cd ~/.config/nvim/"
