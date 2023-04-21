@@ -38,7 +38,7 @@ export evscode="$HOME/.config/Code/User/"
 export egitall="$HOME/..gitAll/"
 export egit="$HOME/..gitbase/"
 export egitestes="$HOME/..gitAll/gitestes"
-export epreferencias="$HOME/..gitAll/preferencias/"
+export eprefere="$HOME/..gitAll/preferencias/"
 export eimplementashow="$HOME/..gitAll/implementashow/"
 export ebackups="$HOME/..backups/"
 export etester="$HOME/..tester/"
@@ -65,7 +65,7 @@ alias onvim="cd ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/.vim/"
 alias ovscode="cd $evscode"
-alias opreferencias="cd $epreferencias"
+alias oprefere="cd $eprefere"
 
 # DUPLICAR OS ALIASES DE VIM PARA NVIM ::
 # EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
@@ -97,6 +97,7 @@ alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
 alias upup="sudo bash -c 'apt-get update && apt-get upgrade'"
 
 # FUNCOES_RZJ
+
 lf() {
   compgen -A function
   # listar todas funcoes no shell
@@ -130,7 +131,7 @@ keyvs() {
   $1 ~/.config/Code/User/keybindings.json
 }
 
-keyvi() {
+keynvim() {
   $1 ~/.config/nvim/keys/mappings.vim
 }
 
