@@ -10,7 +10,7 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # MUDAR LOCAL VIM_RC :: PARA PASTA ~/Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
 export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
-export MYVIMRC='~/.config/nvim/init.vim'
+export MYVIMRC='~/.config/nvim/init.lua'
 # apontando o arquivo init - se for conforme a extensao em uso .vim ou .lua e depois propag.
 
 # export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
