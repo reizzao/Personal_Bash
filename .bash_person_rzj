@@ -19,7 +19,7 @@ export MYVIMRC='~/.config/nvim/init.lua'
 
 # COMANDOS PERSONAL
 alias propag="source ~/.bashrc"
-alias vi="nvim"
+# alias vi="nvim"
 
 #
 # ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
@@ -66,31 +66,6 @@ alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/.vim/"
 alias ovscode="cd $evscode"
 alias oprefere="cd $eprefere"
-
-# DUPLICAR OS ALIASES DE VIM PARA NVIM ::
-# EDITAR ABRINDO COM O EDITOR_VIM CONFIGURADO, confg com 'n' antes da var
-alias vvim="$EDITOR_VIM $cvim/.vimrc"
-alias vtester="$EDITOR_VIM $TESTER_TS"
-alias vpgm="$EDITOR_VIM $epgm"
-alias vnotas="$EDITOR_VIM $epgm/_notas/"
-alias vbash="$EDITOR_VIM $cbash/.bash_person_rzj"
-alias vtema="$EDITOR_VIM ~/.config/nvim/colors/"
-
-# EDITAR ABRINDO COM O EDITOR_NVIM CONFIGURADO, confg com 'n' antes da var
-alias nnvim="$EDITOR_NVIM ~/.config/nvim/init.lua"
-alias ntester="$EDITOR_NVIM $TESTER_TS"
-alias npgm="$EDITOR_NVIM $epgm"
-alias nnotas="$EDITOR_NVIM $epgm/_notas/"
-alias nbash="$EDITOR_NVIM $cbash"
-alias ntema="$EDITOR_NVIM ~/.config/nvim/colors/"
-
-# EDITAR ABRINDO COM O VSCODE CONFIGURADO, confg com 'c' antes da var
-alias cbash_rzj="$EDITOR_CODE ~/Personal_Bash/.bash_person_rzj"
-alias cnvim="$EDITOR_CODE ~/.config/nvim/init.lua"
-alias cpgm="$EDITOR_CODE $epgm"
-alias cnotas="$EDITOR_CODE $epgm/_notas/"
-alias cbash="$EDITOR_CODE $cbash/.bash_person_rzj"
-alias ctema="$EDITOR_CODE ~/.config/nvim/colors/"
 
 # sistema
 # atualizar sudo apt get
