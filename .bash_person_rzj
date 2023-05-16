@@ -9,8 +9,8 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # explorador arquivos >> NERDTree :: c-n
 
 # MUDAR LOCAL VIM_RC :: PARA PASTA ~/Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
-export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
-export MYVIMRC='~/.config/nvim/init.lua'
+# export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
+# export MYVIMRC='~/.config/nvim/init.lua'
 # apontando o arquivo init - se for conforme a extensao em uso .vim ou .lua e depois propag.
 
 # export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
@@ -19,8 +19,8 @@ export MYVIMRC='~/.config/nvim/init.lua'
 
 # COMANDOS PERSONAL
 alias propag="source ~/.bashrc"
-alias vim="nvim"
-alias v="nvim"
+# alias vim="nvim"
+# alias v="nvim"
 alias c="code ."
 
 #
@@ -34,7 +34,7 @@ export cnvim="$HOME/.config/nvim"
 #  MESTRAS :: CADA UM CRIAR A MESTRA - 'c' ABRIR - 'e' EDITAR
 export epgm="$HOME/..pgm/"
 export ets="$HOME/..gitAll/typescript_javascript/"
-export emodules_ts="$HOME/..gitAll/modules_typescript/"
+export elib_ts="$HOME/..gitAll/lib_typescript/"
 export ebash="$HOME/Personal_Bash/"
 export evscode="$HOME/.config/Code/User/"
 export egitall="$HOME/..gitAll/"
@@ -52,7 +52,7 @@ export EDITOR_CODE="code"
 # ABRIR :: ACESSO SEM CD, configurar add $ antes da MESTRA, usar: 'o' antes da var
 alias opgm="cd $epgm"
 alias ots="cd $ets"
-alias omodules_ts="cd $emodules_ts"
+alias olib_ts="cd $elib_ts"
 alias obash="cd $ebash"
 alias ogitall="cd $egitall"
 alias ogit="cd $egit"
