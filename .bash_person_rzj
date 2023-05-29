@@ -90,23 +90,15 @@ lfn() {
   # listar todas funcoes por nome_passado : lfn "Deno"
 }
 
-DenoRunGql() {
-  deno run --allow-net --allow-read --allow-env $1
-}
-# para usar chame a funcao e de o argumente o arquivo .ts a ser executado: ex: main.ts
-
-DenoRun() {
-  deno run -A $1
-  # run sem watch: -A da todas permissoes no deno , que é abreviacao para o --allow-all / --permitir todos
+dr() { # deno run watch
+  deno run --watch --allow-net --allow-read --allow-env $1
+  # deno run -A --watch $1
+  # deno run com watch: -A da todas permissoes no deno , que é abreviacao para o --allow-all / --permitir todos
 }
 
-DenoRunW() {
-  deno run -A --watch $1
-  # run com watch: -A da todas permissoes no deno , que é abreviacao para o --allow-all / --permitir todos
-}
-
-DenoRunTest() {
-  deno test --watch
+dt() { # deno test watch
+  deno test --watch -A
+  # deno test com watch
 }
 
 keyvs() {
