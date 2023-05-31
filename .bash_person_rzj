@@ -90,14 +90,19 @@ lfn() {
   # listar todas funcoes por nome_passado : lfn "Deno"
 }
 
-dr() { # deno run watch
-  deno run --watch --allow-net --allow-read --allow-env $1
+dr() { # deno run watch :: enxergando o import_map.json :: argumentar o arquivo desejo para run
+  deno run --watch -A --import-map import_map.json $1
+  # deno run --watch --allow-net --allow-read --allow-env --import-map import_map.json $1
+
+  # obs: o argumento que sera lido na variavel $1 é o arquivo que desejas dar o rodar.
+
   # deno run -A --watch $1
   # deno run com watch: -A da todas permissoes no deno , que é abreviacao para o --allow-all / --permitir todos
 }
 
-dt() { # deno test watch
-  deno test --watch -A
+dt() { # deno test watch :: enxergando o import_map.json
+  deno test --watch --import-map import_map.json
+  # deno test --watch -A
   # deno test com watch
 }
 
