@@ -67,6 +67,7 @@ alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/.vim/"
 alias ovscode="cd $evscode"
 
+# ObservacaoGeral: para refletir as alteracoes propag no terminal que tiver usando seja ele do bash ou do vscode.
 
 # sistema
 # atualizar sudo apt get
@@ -101,9 +102,17 @@ dr() { # deno run watch :: enxergando o import_map.json :: argumentar o arquivo 
 }
 
 dt() { # deno test watch :: enxergando o import_map.json
-  deno test --watch --import-map import_map.json
+  deno test -A --watch --import-map import_map.json
+
+  # obs: somente inserindo o -A de all que rodou todos os tests sem ele rodava somente 1 test
+
   # deno test --watch -A
   # deno test com watch
+}
+
+# UPDATE DENO
+denoup() {
+  sudo deno upgrade
 }
 
 keyvs() {
