@@ -91,17 +91,25 @@ lfn() {
   # listar todas funcoes por nome_passado : lfn "Deno"
 }
 
-dr() { # deno run watch :: enxergando o import_map.json :: argumentar o arquivo desejo para run
-  deno run --watch -A --import-map import_map.json $1
-  # deno run --watch --allow-net --allow-read --allow-env --import-map import_map.json $1
+# neste_atalho: rodar arquivoDeno em autoReload
+  # uso: dr ARGUMENTAR_O_ARQUIVO
+  # dar_todas_permissoes_com: -A, é abreviacao para o --allow-all
+  # este_comandoOriginal_sem_atalho: deno run --watch --allow-net --allow-read --allow-env $1
+  # parametro_para_argumentarem: $1
 
-  # obs: o argumento que sera lido na variavel $1 é o arquivo que desejas dar o rodar.
-
-  # deno run -A --watch $1
-  # deno run com watch: -A da todas permissoes no deno , que é abreviacao para o --allow-all / --permitir todos
+dr() {
+  deno run --watch -A $1
+}
+dt() {
+  deno test --watch -A
 }
 
-dt() { # deno test watch :: enxergando o import_map.json
+# deno run watcom j de json no atalho :: vai enxergar o import_map.json - argumentar o arquivo há rodar.
+drj() {
+  deno run --watch -A --import-map import_map.json $1
+}
+
+dtj() { # deno test watch :com j o atalho : vai enxergar o import_map.json - nao precisa argumentar.
   deno test -A --watch --import-map import_map.json
 
   # obs: somente inserindo o -A de all que rodou todos os tests sem ele rodava somente 1 test
