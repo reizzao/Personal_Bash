@@ -100,14 +100,6 @@ lfn() {
 dr() {
   deno run --watch -A $1
 }
-dt() {
-  deno test --watch -A
-}
-
-# deno run watcom j de json no atalho :: vai enxergar o import_map.json - argumentar o arquivo há rodar.
-drj() {
-  deno run --watch -A --import-map import_map.json $1
-}
 
 dtj() { # deno test watch :com j o atalho : vai enxergar o import_map.json - nao precisa argumentar.
   deno test -A --watch --import-map import_map.json
@@ -117,6 +109,30 @@ dtj() { # deno test watch :com j o atalho : vai enxergar o import_map.json - nao
   # deno test --watch -A
   # deno test com watch
 }
+
+# denoTest_ImportMap
+dt() {
+  deno test -A --watch --import-map import_map.json
+
+  # deno test watch :com j o atalho : vai enxergar o import_map.json - nao precisa argumentar.
+
+  # obs: somente inserindo o -A de all que rodou todos os tests sem ele rodava somente 1 test
+
+  # deno test --watch -A
+  # deno test com watch
+}
+
+# denoTestNormal
+dtn() {
+  deno test --watch -A
+}
+
+# deno run watcom j de json no atalho :: vai enxergar o import_map.json - argumentar o arquivo há rodar.
+drj() {
+  deno run --watch -A --import-map import_map.json $1
+}
+
+
 
 # UPDATE DENO
 denoup() {
