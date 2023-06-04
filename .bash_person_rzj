@@ -97,48 +97,37 @@ lfn() {
   # este_comandoOriginal_sem_atalho: deno run --watch --allow-net --allow-read --allow-env $1
   # parametro_para_argumentarem: $1
 
+# Deno Scripts - enxerga ImportMapJSON ***********************
+
+# denoRun_Enxerga_ImportMapJSON - <Argumentar_CaminhoArquivo>
 dr() {
-  deno run --watch -A $1
-}
-
-dtj() { # deno test watch :com j o atalho : vai enxergar o import_map.json - nao precisa argumentar.
-  deno test -A --watch --import-map import_map.json
-
-  # obs: somente inserindo o -A de all que rodou todos os tests sem ele rodava somente 1 test
-
-  # deno test --watch -A
-  # deno test com watch
-}
-
-# denoTest_ImportMap
-dt() {
-  deno test -A --watch --import-map import_map.json
-
-  # deno test watch :com j o atalho : vai enxergar o import_map.json - nao precisa argumentar.
-
-  # obs: somente inserindo o -A de all que rodou todos os tests sem ele rodava somente 1 test
-
-  # deno test --watch -A
-  # deno test com watch
-}
-
-# denoTestNormal
-dtn() {
-  deno test --watch -A
-}
-
-# deno run watcom j de json no atalho :: vai enxergar o import_map.json - argumentar o arquivo há rodar.
-drj() {
   deno run --watch -A --import-map import_map.json $1
 }
 
+# denoTest_ImportMapJSON
+dt() {
+  deno test -A --watch --import-map import_map.json
+}
 
+
+# Deno Scripts - NORMAL ***********************
+
+# DenoRun Normal <Argumentar_CaminhoArquivo>
+drn() {
+  deno run --watch -A $1
+}
+
+# denoTestNORMAL
+dtn() {
+  deno test --watch -A
+  }
 
 # UPDATE DENO
 denoup() {
   sudo deno upgrade
 }
 
+# EDITOR_VSCODE ***********************
 keyvs() {
   $1 ~/.config/Code/User/keybindings.json
 }
