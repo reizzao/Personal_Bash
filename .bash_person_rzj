@@ -53,6 +53,7 @@ export EDITOR_CODE="code"
 alias opgm="cd $epgm"
 alias ots="cd $ets"
 alias omodts="cd $emodts"
+alias omodts2="cd ~/..gitAll/rzModulesTS_FIXOPC/"
 alias obash="cd $ebash"
 alias ogitall="cd $egitall"
 alias ogit="cd $egit"
@@ -65,7 +66,7 @@ alias ocpp="cd ~/..backend/cpp/"
 alias onvim="cd ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
 alias ovim="cd ~/.vim/"
-alias ovscode="cd $evscode"
+alias ovs="cd $evscode"
 
 # ObservacaoGeral: para refletir as alteracoes propag no terminal que tiver usando seja ele do bash ou do vscode.
 
