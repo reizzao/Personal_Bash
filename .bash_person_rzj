@@ -21,7 +21,9 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 alias propag="source ~/.bashrc"
 # alias vim="nvim"
 # alias v="nvim"
+alias n="nvim"
 alias c="code ."
+alias e="exit"
 
 #
 # ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
@@ -53,14 +55,14 @@ export EDITOR_CODE="code"
 
 # ACESSAR E ABRIR NO VSCODE
 alias opgm="cd $epgm"
-alias ots="cd $ets && c"
-alias olibs="cd $elibs && c"
-alias obash="cd $ebash && c"
-alias ogit="cd $egit && c"
-alias ogitestes="cd $egitestes && c"
-alias obackups="cd $ebackups && c"
-alias oshow="cd $eimplementashow && c"
-alias ovs="cd $evscode && c"
+alias ots="cd $ets"
+alias olibs="cd $elibs"
+alias obash="cd $ebash"
+alias ogit="cd $egit"
+alias ogitestes="cd $egitestes"
+alias obackups="cd $ebackups"
+alias oshow="cd $eimplementashow"
+alias ovs="cd $evscode"
 
 # ACESSAR E ABRIR COM NVIM
 alias ovim="cd ~/.vim/"
