@@ -60,7 +60,7 @@ alias olibs="cd $elibs"
 alias obash="cd $ebash"
 alias ogit="cd $egit"
 alias ogitestes="cd $egitestes"
-alias obackups="cd $ebackups"
+alias oback="cd $ebackups"
 alias oshow="cd $eimplementashow"
 alias ovs="cd $evscode"
 
