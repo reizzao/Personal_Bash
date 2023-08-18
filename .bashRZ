@@ -48,6 +48,7 @@ export etester="$HOME/..tester/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
 export EDITOR_CODE="code"
+export ejava="$HOME/..gitAll/java/"
 
 
 
@@ -74,6 +75,7 @@ alias obash_rzj="cd ~/Personal_Bash"
 alias ocpp="cd ~/..backend/cpp/"
 alias otester="cd $etester"
 alias ogitall="cd $egitall"
+alias ojava="cd $ejava"
 
 # ObservacaoGeral: para refletir as alteracoes propag no terminal que tiver usando seja ele do bash ou do vscode.
 
