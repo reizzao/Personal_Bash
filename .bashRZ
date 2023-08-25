@@ -17,6 +17,10 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # OBS: VARIAVEL $HOME == /home/rzj/
 
+# DEFININDO VARIAVEIS DE AMBINETE PACOTE:
+JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+
+
 # COMANDOS PERSONAL
 alias propag="source ~/.bashrc"
 # alias vim="nvim"
@@ -49,10 +53,10 @@ export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
 export EDITOR_CODE="code"
 export ejava="$HOME/..gitAll/java/"
+export enota="$HOME/..gitAll/_notasPGM_/"
 
 
-
-# ABRIR :: ACESSO SEM CD **************
+ # ABRIR :: ACESSO SEM CD **************
 
 # ACESSAR E ABRIR NO VSCODE
 alias opgm="cd $epgm"
@@ -76,6 +80,7 @@ alias ocpp="cd ~/..backend/cpp/"
 alias otester="cd $etester"
 alias ogitall="cd $egitall"
 alias ojava="cd $ejava"
+alias onota="cd $enota"
 
 # ObservacaoGeral: para refletir as alteracoes propag no terminal que tiver usando seja ele do bash ou do vscode.
 
@@ -151,3 +156,4 @@ keynvim() {
 exbash() {
   $1 ~/Personal_Bash/.bash_person_rzj
 }
+
