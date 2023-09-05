@@ -20,6 +20,11 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # DEFININDO VARIAVEIS DE AMBINETE PACOTE:
 JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
 
+# MAVEN - dizer que Path recebe o Path : diretorio onde esta o binario mvn do maven
+export PATH=$PATH:/home/rzj/maven/bin/
+
+# KOTLIN - adicionar bin do novo pacote ao PATH caminho do sistema.
+export PATH=$PATH:/home/rzj/_git_rzj/_programas_/kotlin/kotlinc/bin/
 
 # COMANDOS PERSONAL
 alias propag="source ~/.bashrc"
