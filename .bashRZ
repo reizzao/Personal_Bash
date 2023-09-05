@@ -25,6 +25,7 @@ export PATH=$PATH:/home/rzj/maven/bin/
 
 # KOTLIN - adicionar bin do novo pacote ao PATH caminho do sistema.
 export PATH=$PATH:/home/rzj/_git_rzj/_programas_/kotlin/kotlinc/bin/
+export PATH=$PATH:/home/rzj/_git_rzj/_programas_/intellij_Community/idea-IC-232.9559.62/bin/
 
 # COMANDOS PERSONAL
 alias propag="source ~/.bashrc"
@@ -86,6 +87,7 @@ alias otester="cd $etester"
 alias ogitall="cd $egitall"
 alias ojava="cd $ejava"
 alias onota="cd $enota"
+alias i="/home/rzj/_git_rzj/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # itellij
 
 # ObservacaoGeral: para refletir as alteracoes propag no terminal que tiver usando seja ele do bash ou do vscode.
 
