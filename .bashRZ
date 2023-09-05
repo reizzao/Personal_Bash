@@ -60,6 +60,7 @@ export EDITOR_NVIM="nvim"
 export EDITOR_CODE="code"
 export ejava="$HOME/..gitAll/java/"
 export enota="$HOME/..gitAll/_notasPGM_/"
+export ekotlin="$HOME/_git_rzj/_base_linguagens_/kotlin/kotlin_base/A_by_vscode/"
 
 
  # ABRIR :: ACESSO SEM CD **************
@@ -87,6 +88,7 @@ alias otester="cd $etester"
 alias ogitall="cd $egitall"
 alias ojava="cd $ejava"
 alias onota="cd $enota"
+alias okotlin="cd $ekotlin"
 alias i="/home/rzj/_git_rzj/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # itellij
 
 # ObservacaoGeral: para refletir as alteracoes propag no terminal que tiver usando seja ele do bash ou do vscode.
