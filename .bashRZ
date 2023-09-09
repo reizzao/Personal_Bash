@@ -58,7 +58,7 @@ export etester="$HOME/..tester/"
 export EDITOR_VIM="vim"
 export EDITOR_NVIM="nvim"
 export EDITOR_CODE="code"
-export ejava="$HOME/..gitAll/java/"
+export ejava="$HOME/_git_rzj/_base_linguagens_/java/"
 export enota="$HOME/..gitAll/_notasPGM_/"
 export ekotlin="$HOME/_git_rzj/_base_linguagens_/kotlin/kotlin_base/A_by_vscode/"
 
@@ -120,6 +120,11 @@ lfn() {
   # dar_todas_permissoes_com: -A, é abreviacao para o --allow-all
   # este_comandoOriginal_sem_atalho: deno run --watch --allow-net --allow-read --allow-env $1
   # parametro_para_argumentarem: $1
+
+# Run Quarkus : rq
+rq() {
+  ./mvnw compile quarkus:dev
+}
 
 # Deno Scripts - enxerga ImportMapJSON ***********************
 
