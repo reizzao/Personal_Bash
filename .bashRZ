@@ -16,17 +16,17 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
 
 # ESSENCIAIS
-alias obash_rzj="cd ~/Personal_Bash"
 alias propag="source ~/.bashrc"
-alias n="nvim"
-alias c="code ."
-alias e="exit"
+alias obash_rzj="cd ~/Personal_Bash"
 
-#
 # ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
 export cbash="$HOME/Personal_Bash"
 
 # EDITORES
+alias n="nvim"
+alias c="code ."
+alias e="exit"
+
 export cnvim="$HOME/.config/nvim"
 export cvim="$HOME/.vim"
 export clvim="$HOME/.config/lvim"
@@ -36,6 +36,7 @@ export cgit="$HOME/..git"
 
 # NOVOS - SEM mestras $e
 alias ojava="cd $HOME/_git_rzj/_base_linguagens_/java/"
+alias ots="cd $HOME/_git_rzj/_base_linguagens_/TS/"
 alias onota="cd $HOME/_git_rzj/_notasPGM_/"
 alias okotlin="cd $HOME/_git_rzj/_base_linguagens_/kotlin/kotlin_base/A_by_vscode/"
 
