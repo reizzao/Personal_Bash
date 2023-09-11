@@ -15,7 +15,29 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
 
-# OBS: VARIAVEL $HOME == /home/rzj/
+# ESSENCIAIS
+alias obash_rzj="cd ~/Personal_Bash"
+alias propag="source ~/.bashrc"
+alias n="nvim"
+alias c="code ."
+alias e="exit"
+
+#
+# ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
+export cbash="$HOME/Personal_Bash"
+
+# EDITORES
+export cnvim="$HOME/.config/nvim"
+export cvim="$HOME/.vim"
+export clvim="$HOME/.config/lvim"
+alias i="/home/rzj/_git_rzj/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # itellij
+
+export cgit="$HOME/..git"
+
+# NOVOS - SEM mestras $e
+alias ojava="cd $HOME/_git_rzj/_base_linguagens_/java/"
+alias onota="cd $HOME/_git_rzj/_notasPGM_/"
+alias okotlin="cd $HOME/_git_rzj/_base_linguagens_/kotlin/kotlin_base/A_by_vscode/"
 
 # -- SET VAR_AMBIENTE PACOTE --
 # obs: preferir setar cada var com export VAR_ALVO
@@ -29,73 +51,11 @@ export PATH=$PATH:/home/rzj/maven/bin/
 export PATH=$PATH:/home/rzj/_git_rzj/_programas_/kotlin/kotlinc/bin/
 export PATH=$PATH:/home/rzj/_git_rzj/_programas_/intellij_Community/idea-IC-232.9559.62/bin/
 
-# COMANDOS PERSONAL
-alias propag="source ~/.bashrc"
-# alias vim="nvim"
-# alias v="nvim"
-alias n="nvim"
-alias c="code ."
-alias e="exit"
-
-#
-# ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
-export cbash="$HOME/Personal_Bash"
-export cvim="$HOME/.vim"
-export clvim="$HOME/.config/lvim"
-export cgit="$HOME/..git"
-export cnvim="$HOME/.config/nvim"
-
-#  MESTRAS :: CADA UM CRIAR A MESTRA - 'c' ABRIR - 'e' EDITAR
-export epgm="$HOME/..pgm/"
-export ets="$HOME/..gitAll/typescript_javascript/"
-export elibs="$HOME/..gitAll/RZ_Libs/"
-export ebash="$HOME/Personal_Bash/"
-export evscode="$HOME/.config/Code/User/"
-export egitall="$HOME/..gitAll/"
-export egit="$HOME/..gitbase/"
-export egitestes="$HOME/..gitAll/gitestes"
-export eimplementashow="$HOME/..gitAll/implementashow/"
-export ebackups="$HOME/..backups/"
-export etester="$HOME/..tester/"
-export EDITOR_VIM="vim"
-export EDITOR_NVIM="nvim"
-export EDITOR_CODE="code"
-export ejava="$HOME/_git_rzj/_base_linguagens_/java/"
-export enota="$HOME/..gitAll/_notasPGM_/"
-export ekotlin="$HOME/_git_rzj/_base_linguagens_/kotlin/kotlin_base/A_by_vscode/"
-
-
- # ABRIR :: ACESSO SEM CD **************
-
-# ACESSAR E ABRIR NO VSCODE
-alias opgm="cd $epgm"
-alias ots="cd $ets"
-alias olibs="cd $elibs"
-alias obash="cd $ebash"
-alias ogit="cd $egit"
-alias ogitestes="cd $egitestes"
-alias oback="cd $ebackups"
-alias oshow="cd $eimplementashow"
-alias ovs="cd $evscode"
-
-# ACESSAR E ABRIR COM NVIM
-alias ovim="cd ~/.vim/"
-
 # SOMENTE ACESSAR
 alias onvim="cd ~/.config/nvim/"
 alias otema_nvim="cd ~/.config/nvim/colors/"
-alias obash_rzj="cd ~/Personal_Bash"
-alias ocpp="cd ~/..backend/cpp/"
-alias otester="cd $etester"
-alias ogitall="cd $egitall"
-alias ojava="cd $ejava"
-alias onota="cd $enota"
-alias okotlin="cd $ekotlin"
-alias i="/home/rzj/_git_rzj/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # itellij
 
-# ObservacaoGeral: para refletir as alteracoes propag no terminal que tiver usando seja ele do bash ou do vscode.
-
-# sistema
+# SISTEMA
 # atualizar sudo apt get
 update() {
   sudo apt update
