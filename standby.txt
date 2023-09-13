@@ -8,7 +8,7 @@
 
 #  MESTRAS :: CADA UM CRIAR A MESTRA - 'c' ABRIR - 'e' EDITAR
 # export epgm="$HOME/..pgm/"
-# export ets="$HOME/..gitAll/typescript_javascript/"
+# export ets="$HOME/_git_rzj/_base_linguagens_/TS/"
 # export elibs="$HOME/..gitAll/RZ_Libs/"
 # export ebash="$HOME/Personal_Bash/"
 # export evscode="$HOME/.config/Code/User/"
