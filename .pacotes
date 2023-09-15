@@ -9,6 +9,6 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$PATH:/home/rzj/maven/bin/
 
 # KOTLIN - adicionar bin do novo pacote ao PATH caminho do sistema.
-export PATH=$PATH:/home/rzj/_git_rzj/_programas_/kotlin/kotlinc/bin/
-export PATH=$PATH:/home/rzj/_git_rzj/_programas_/intellij_Community/idea-IC-232.9559.62/bin/
+export PATH=$PATH:/home/rzj/x/_git_rzj_/_programas_/kotlin/kotlinc/bin/
+export PATH=$PATH:/home/rzj/x/_git_rzj_/_programas_/intellij_Community/idea-IC-232.9559.62/bin/
 
