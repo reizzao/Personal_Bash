@@ -71,6 +71,10 @@ lfn() {
   # parametro_para_argumentarem: $1
 
 # Kotlin --
+run_kt() { # compilar e rodar arquivo Main.kt
+  kotlinc src/Main.kt && kotlin MainKt.class
+}
+
 # Run Quarkus : rq
 rq() {
   ./mvnw compile quarkus:dev
