@@ -71,8 +71,8 @@ lfn() {
   # parametro_para_argumentarem: $1
 
 # Kotlin --
-run_kt() { # compilar e rodar arquivo Main.kt
-  kotlinc src/Main.kt && kotlin MainKt.class
+runkt() { # compilar e rodar arquivo Main.kt
+  clear && kotlinc src/Main.kt && kotlin MainKt.class
 }
 
 # Run Quarkus : rq
@@ -134,4 +134,11 @@ keynvim() {
 
 exbash() {
   $1 ~/Personal_Bash/.bash_person_rzj
+}
+
+# GIT_LOCAL E GITHUB
+deleteBrach() {
+  git branch -d $1 && git push origin :$1 && git fetch -p
+  # USO: apos o nome da funcao passe o nome da branch que vai excluir local, remoto e atualizar o repo.
+  # deletar branch local e remota e sincronizar atualizar gits local e remoto
 }
