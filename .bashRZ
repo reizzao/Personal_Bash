@@ -33,13 +33,11 @@ export clvim="$HOME/.config/lvim"
 alias i="/home/rzj/x/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # itellij
 
 
-# NOVOS - SEM mestras $e
-alias onota="cd $HOME/x/_github_rz_/_notasPGM_/"
-alias=onvim="cd $HOME/.config/nvim/"
-alias okt="cd $HOME/x/_github_rz_/_base_linguagens_/kotlin/"
-alias ojava="cd $HOME/x/_github_rz_/_base_linguagens_/java/"
-alias ots="cd $HOME/x/_github_rz_/_base_linguagens_/TS/"
-alias ogo="cd $HOME/x/_github_rz_/_base_linguagens_/golang/"
+# ATALHOS PGM
+alias opgm="cd $HOME/x/_github_rz_/_Pgm_Universal/"
+alias obases="cd $HOME/x/_github_rz_/_bases_/"
+alias onvim="cd $HOME/.config/nvim/"
+
 
 
 # SISTEMA
@@ -136,9 +134,10 @@ exbash() {
   $1 ~/Personal_Bash/.bash_person_rzj
 }
 
-# GIT_LOCAL E GITHUB
-deleteBrach() {
+# GITS
+delete_brach() {
   git branch -d $1 && git push origin :$1 && git fetch -p
-  # USO: apos o nome da funcao passe o nome da branch que vai excluir local, remoto e atualizar o repo.
+  # input insira o nome da branch alvo
+  # aplicabilidade: apos o nome da funcao passe o nome da branch que vai excluir local, remoto e atualizar o repo.
   # deletar branch local e remota e sincronizar atualizar gits local e remoto
 }
