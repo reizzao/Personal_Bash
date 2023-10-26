@@ -33,10 +33,11 @@ export clvim="$HOME/.config/lvim"
 alias i="/home/rzj/x/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # itellij
 
 
-# ATALHOS PGM
+# ATALHOS
 alias opgm="cd $HOME/x/_github_rz_/_Pgm_Universal/"
 alias obases="cd $HOME/x/_github_rz_/_bases_/"
 alias onvim="cd $HOME/.config/nvim/"
+alias omusic="cd $HOME/x/_github_rz_/_bases_/music/"
 
 
 
