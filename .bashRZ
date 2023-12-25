@@ -38,6 +38,7 @@ alias opgm="cd $HOME/x/_github_rz_/_Pgm_Universal/"
 alias obases="cd $HOME/x/_github_rz_/_bases_/"
 alias onvim="cd $HOME/.config/nvim/"
 alias omusic="cd $HOME/x/_github_rz_/_bases_/music/"
+alias odart="cd $HOME/x/_github_rz_/_bases_/dart/"
 
 
 
