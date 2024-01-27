@@ -1,6 +1,6 @@
+# Kotlin
 
-# Kotlin --
-krun() { # todo : essas vars só funciona no vscode
+krun() { # run arquivo kt ::: TODO: essas vars só funciona no vscode
   cd $workspaceRoot || $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar
 }
 
