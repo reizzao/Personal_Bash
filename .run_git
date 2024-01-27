@@ -1,5 +1,11 @@
 # GITS
 
+alias ogit="cd $HOME/x/_github_rz_/"
+
+oogit() { # abrir diretorios de repositorios git no pc e ja listar as pastas dentro
+  $ogit && ls -a
+}
+
 delete_brach() {
   git branch -d $1 && git push origin :$1 && git fetch -p
   # input insira o nome da branch alvo
