@@ -2,8 +2,9 @@
 
 export git_repos="$HOME/x/_github_rz_/"
 
-ogit() { # abrir diretorios de repositorios git no pc e ja listar as pastas dentro
+ogit() {
   cd $git_repos && ls -a
+  # abrir diretorios de repositorios git no pc e ja listar as pastas dentro
 }
 
 delete_brach() {
