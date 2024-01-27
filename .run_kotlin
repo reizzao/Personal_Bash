@@ -1,7 +1,19 @@
 # Kotlin
 
+ #rodar_arquivo_no_console:
+ # primeiro_compilar: kotlinc src/Main.kt
+ # obs: o compilado vai gerar o nome arquivo compilado em PascalCase junto com Kt exemplo de main.kt vai gerar um Mainkt.class #
+ # rodar_compilado: kotlin MainKt.class
+ # comando_run_personal: kotlinc src/Main.kt && kotlin MainKt.class
+
+ ckt() {
+  kotlinc $1
+  # obs: vai compilar o arquivo passado.extensao kt , depois para mostrar no console o compilado >> kotlin ArquivoCompilado.class #
+ }
+
 krun() { # run arquivo kt ::: TODO: essas vars só funciona no vscode
   cd $workspaceRoot || $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar
+
 }
 
 runkt() { # compilar e rodar arquivo Main.kt
