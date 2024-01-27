@@ -1,0 +1,55 @@
+
+# ==============================================================================================
+
+# *** BASHRC PERSONALIZADO ***
+# Para funcionar este arquivo no .bashrc add estas chamadas:
+# Repo Personal_Bash : (git clone https://github.com/rzjprogramador/Personal_Bash)
+# faça o clone deste repo na raiz do home linux e adicione no .bashrc estas linhas que chamam este repo clonado:
+
+#  INSERIR NO .BASHRC:
+
+# ==== CONFIGURACOES PERSONALIZADAS BASH PUXADAS DE :: Personal_Bash/.bashRZ
+# include .bashrc if it exists *** VERIFICAR SE O ARQUIVO EXIST :
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.bashSistem_RZJ ]; then
+    . $HOME/x/PC/_Personal_Bash_/.bashSistem_RZJ
+fi
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.atalhos ]; then
+    . $HOME/x/PC/_Personal_Bash_/.atalhos
+fi
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.run_editores ]; then
+    . $HOME/x/PC/_Personal_Bash_/.run_editores
+fi
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.run_vscode ]; then
+    . $HOME/x/PC/_Personal_Bash_/.run_vscode
+fi
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.run_nvim ]; then
+    . $HOME/x/PC/_Personal_Bash_/.run_nvim
+fi
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.reconhecer_pacotes_dev ]; then
+    . $HOME/x/PC/_Personal_Bash_/.reconhecer_pacotes_dev
+fi
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.run_git ]; then
+    . $HOME/x/PC/_Personal_Bash_/.run_git
+fi
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.run_deno ]; then
+    . $HOME/x/PC/_Personal_Bash_/.run_deno
+fi
+
+if [ -f $HOME/x/PC/_Personal_Bash_/.run_kotlin ]; then
+    . $HOME/x/PC/_Personal_Bash_/.run_kotlin
+fi
+
+# CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
+stty -ixon
+
+# FIM PERSONALIZACAO BASHRC -- RESTANTE NO BASH PERSONALIZADO ===============
+# ==============================================================================================
+
