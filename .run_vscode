@@ -1,0 +1,18 @@
+# EDITOR_VSCODE ***********************
+
+# ATALHOS
+alias c="code ."
+alias ocode="cd $HOME/.config/Code/User/"
+
+#FUNCOES
+keyvs() {
+  $1 ~/.config/Code/User/keybindings.json
+}
+
+keynvim() {
+  $1 ~/.config/nvim/keys/mappings.vim
+}
+
+exbash() {
+  $1 ~/Personal_Bash/.bash_person_rzj
+}

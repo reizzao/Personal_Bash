@@ -1,0 +1,32 @@
+# DENO --
+# Deno Scripts - enxerga ImportMapJSON ***********************
+
+# DENO RUN
+# DenoRun Normal <Argumentar_CaminhoArquivo>
+dr() {
+  deno run --watch -A $1
+}
+# denoRun_Enxerga_ImportMapJSON - <Argumentar_CaminhoArquivo>
+drj() {
+  deno run --watch -A --import-map import_map.json $1
+}
+
+# DENO TEST
+# denoTestNORMAL
+dt() {
+  deno test --watch -A
+  }
+
+# denoTest_ImportMapJSON
+dtj() {
+  deno test -A --watch --import-map import_map.json
+}
+
+# Deno Scripts - NORMAL ***********************
+
+
+
+# UPDATE DENO
+denoup() {
+  sudo deno upgrade
+}

@@ -1,7 +1,7 @@
-
-# PACOTES --
+# PACOTES DEV
 # -- SET VAR_AMBIENTE PACOTE --
 # obs: preferir setar cada var com export VAR_ALVO
+
 # JAVA --
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 

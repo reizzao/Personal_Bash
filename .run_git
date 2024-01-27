@@ -1,0 +1,8 @@
+# GITS
+
+delete_brach() {
+  git branch -d $1 && git push origin :$1 && git fetch -p
+  # input insira o nome da branch alvo
+  # aplicabilidade: apos o nome da funcao passe o nome da branch que vai excluir local, remoto e atualizar o repo.
+  # deletar branch local e remota e sincronizar atualizar gits local e remoto
+}
