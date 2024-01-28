@@ -1,36 +1,13 @@
 # Kotlin
 
- #rodar_arquivo_no_console:
- # primeiro_compilar: kotlinc src/Main.kt
- # obs: o compilado vai gerar o nome arquivo compilado em PascalCase junto com Kt exemplo de main.kt vai gerar um Mainkt.class #
- # rodar_compilado: kotlin MainKt.class
- # comando_run_personal: kotlinc src/Main.kt && kotlin MainKt.class
-
- ckt() {
-  kotlinc $1
-  # obs: vai compilar o arquivo passado.extensao kt , depois para mostrar no console o compilado >> kotlin ArquivoCompilado.class #
- }
-
-krun() { # run arquivo kt ::: TODO: essas vars só funciona no vscode
-  cd $workspaceRoot || $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar
-
-}
-
-runkt() { # compilar e rodar arquivo Main.kt
-  clear && kotlinc $workspaceRoot || $dir && kotlin main.kt
+ # PRINTAR NO CONSOLE ARQUIVO .KT
+runkt() {
+  kotlinc $1.kt -include-runtime -d dist/debugs/$1.jar && java -jar dist/debugs/$1.jar
+# uso: chame o nome da funcao e como parametro passe o nome do arquivo sem a extensao.
+# observacao configurei para criar dentro de dist/debugs/ (se nao existir ele criará estas pastas) os arquivos de visualizacao .jar
 }
 
 # Run Quarkus : rq
-rq() {
-  ./mvnw compile quarkus:dev
-}
-
-# run arquivo kotlin : inserir para $1 o nome do arquivo e para $2 o nome da classe ex: rk arquivo1 Classe1
-rk() {
-  /usr/lib/jvm/java-1.17.0-openjdk-amd64/bin/java -javaagent:/home/rzj/x/_programas_/intellij_Community/idea-IC-232.9559.62/lib/idea_rt.jar=45567:/home/rzj/x/_programas_/intellij_Community/idea-IC-232.9559.62/bin -Dfile.encoding=UTF-8 -classpath /home/rzj/x/_github_rz_/_base_linguagens_/kotlin/kotlin_base/B_by_itellij/primeiro_itellij/target/classes:/home/rzj/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.0/kotlin-stdlib-1.9.0.jar:/home/rzj/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.0/kotlin-stdlib-common-1.9.0.jar:/home/rzj/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar $1.$2Kt
-}
-
-# insira o nome do arquivo sem extensao - sera gerado o jar do arquivo- vai compilar e printar
-printk() {
-  kotlinc $1.kt -include-runtime -d $1.jar && java -jar $1.jar
-}
+# rq() {
+#   ./mvnw compile quarkus:dev
+# }
