@@ -7,7 +7,7 @@ runkt() {
 # observacao configurei para criar dentro de dist/debugs/ (se nao existir ele criará estas pastas) os arquivos de visualizacao .jar
 }
 
-# PRINTAR .JAR SEM COMPILAR
+# SOMENTE PRINTAR .JAR SEM COMPILAR
 printkt() {
   java -jar dist/debugs/$1.jar
   # USO : depois da chamada passe somente o nome doa arquivo sem extensao
