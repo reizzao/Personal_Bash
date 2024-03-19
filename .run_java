@@ -1,0 +1,5 @@
+
+RunSpring() {
+  ./mvnw spring-boot:run
+# RODAR SERVIDOR SPRING BOOT
+}
