@@ -1,5 +1,14 @@
 
+# VAR DE AMBIENTE JAVA #
+
+# VAR QUE VAI DEFINIR A VERSAO EM USO DO PACOTE: Obs: inutilizei esta config do JAVA_HOME - to usando pelo sdkmain as configs agora ele ja configura esta var em putro lugar conforme versao instalada.
+# O Skdmain faz toda config no .bashrc na variavel : SDKMAN_DIR , nao preciso me preocupar com a JAVA_HOME.
+# export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+# MAVEN - dizer que Path recebe o Path : diretorio onde esta o binario mvn do maven
+export PATH=$PATH:/home/rzj/maven/bin/
+
 RunSpring() {
-  ./mvnw spring-boot:run
+  mvnw spring-boot:run
 # RODAR SERVIDOR SPRING BOOT
 }

@@ -2,11 +2,6 @@
 # -- SET VAR_AMBIENTE PACOTE --
 # obs: preferir setar cada var com export VAR_ALVO
 
-# JAVA --
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-
-# MAVEN - dizer que Path recebe o Path : diretorio onde esta o binario mvn do maven
-export PATH=$PATH:/home/rzj/maven/bin/
 
 # KOTLIN - adicionar bin do novo pacote ao PATH caminho do sistema.
 export PATH=$PATH:/home/rzj/x/_programas_/kotlin/kotlinc/bin/
