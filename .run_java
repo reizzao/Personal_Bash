@@ -12,3 +12,15 @@ RunSpring() {
   mvn spring-boot:run
 # RODAR SERVIDOR SPRING BOOT
 }
+
+# Rodar todos tests spring
+TestSpring() {
+  mvn test
+  # não precisa argumentar
+}
+
+# Rodar test por arquivo spring
+TestSpringUnit() {
+  mvn test -Dtest=$1.$2#$3
+  # argumente 1: o caminho do projeto , 2: o nome da classe de test a ser testada e 3: nome do metodo
+}
