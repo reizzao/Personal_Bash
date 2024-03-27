@@ -1,12 +1,30 @@
 
 # VAR DE AMBIENTE JAVA #
 
-# VAR QUE VAI DEFINIR A VERSAO EM USO DO PACOTE: Obs: inutilizei esta config do JAVA_HOME - to usando pelo sdkmain as configs agora ele ja configura esta var em putro lugar conforme versao instalada.
-# O Skdmain faz toda config no .bashrc na variavel : SDKMAN_DIR , nao preciso me preocupar com a JAVA_HOME.
-# export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+# definir a variavel JAVA_HOME e add o bin/ do jdk em uso no PATH do linux
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+export PATH=$PATH:/usr/lib/jvm/java-21-openjdk-amd64/bin/
+
+# SE PRECISAR INDICO NO SETTINGS DO VSCODE MEU JDK :
+# "java.jdt.ls.java.home": "/home/rzj/x/_programas_/jdk_em_uso/jdk_21",
+
+# SDK MAN caso usar no lugar da java home
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# export SDKMAN_DIR="$HOME/.sdkman"
+# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # MAVEN - dizer que Path recebe o Path : diretorio onde esta o binario mvn do maven
 export PATH=$PATH:/home/rzj/maven/bin/
+
+InstallJava() {
+  sudo apt install openjdk-21-jdk
+  # conferir java: `java --version`
+  # conferir compilador: `javac --version`
+}
+
+InstallJre() {
+  sudo apt install openjdk-21-jre
+}
 
 RunSpring() {
   mvn spring-boot:run
@@ -24,3 +42,5 @@ TestSpringUnit() {
   mvn test -Dtest=$1.$2#$3
   # argumente 1: o caminho do projeto , 2: o nome da classe de test a ser testada e 3: nome do metodo
 }
+
+# cp /usr/lib/jvm/

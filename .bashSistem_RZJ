@@ -23,10 +23,7 @@ alias obash="cd $HOME/x/PC/_Personal_Bash_/"
 # export cbash="$HOME/x/Personal_Bash"
 
 # ATALHOS
-
 alias e="exit"
-
-
 
 # RUN PACOTES SISTEM
 # atualizar sudo apt get
