@@ -2,16 +2,12 @@
 # VAR DE AMBIENTE JAVA #
 
 # definir a variavel JAVA_HOME e add o bin/ do jdk em uso no PATH do linux
+# obs: tem que remover as outras pastas java e openjdk que nao vai usar em : /usr/lib/jvm/
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 export PATH=$PATH:/usr/lib/jvm/java-21-openjdk-amd64/bin/
 
 # SE PRECISAR INDICO NO SETTINGS DO VSCODE MEU JDK :
 # "java.jdt.ls.java.home": "/home/rzj/x/_programas_/jdk_em_uso/jdk_21",
-
-# SDK MAN caso usar no lugar da java home
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-# export SDKMAN_DIR="$HOME/.sdkman"
-# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # MAVEN - dizer que Path recebe o Path : diretorio onde esta o binario mvn do maven
 export PATH=$PATH:/home/rzj/maven/bin/

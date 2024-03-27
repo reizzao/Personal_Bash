@@ -37,6 +37,11 @@ update() {
 
 # FUNCOES_SISTEM
 
+RemoveDir() {
+  sudo rm -r $1
+  # remove diretorios como super_usuario
+}
+
 lf() {
   compgen -A function
   # listar todas funcoes no shell
