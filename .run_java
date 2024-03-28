@@ -1,13 +1,12 @@
 
 # VAR DE AMBIENTE JAVA #
-
 # definir a variavel JAVA_HOME e add o bin/ do jdk em uso no PATH do linux
-# obs: tem que remover as outras pastas java e openjdk que nao vai usar em : /usr/lib/jvm/
+# obs: tem que remover as outras pastas java e openjdk que nao vai usar em : /usr/lib/jvm/ exemplo:
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 export PATH=$PATH:/usr/lib/jvm/java-21-openjdk-amd64/bin/
 
-# SE PRECISAR INDICO NO SETTINGS DO VSCODE MEU JDK :
-# "java.jdt.ls.java.home": "/home/rzj/x/_programas_/jdk_em_uso/jdk_21",
+# CONFIGURAR NO SETTINGS DO VSCODE : obs: no momento nao precisa:
+# "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk-amd64", // CAMINHO VAR AMBIENTE JAVA
 
 # MAVEN - dizer que Path recebe o Path : diretorio onde esta o binario mvn do maven
 export PATH=$PATH:/home/rzj/maven/bin/
