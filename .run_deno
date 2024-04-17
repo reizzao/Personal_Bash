@@ -3,22 +3,22 @@
 
 # DENO RUN
 # DenoRun Normal <Argumentar_CaminhoArquivo>
-dr() {
+DenoRun1() {
   deno run --watch -A $1
 }
 # denoRun_Enxerga_ImportMapJSON - <Argumentar_CaminhoArquivo>
-drj() {
+DenoRun2() {
   deno run --watch -A --import-map import_map.json $1
 }
 
 # DENO TEST
 # denoTestNORMAL
-dt() {
+DenoTest1() {
   deno test --watch -A
   }
 
 # denoTest_ImportMapJSON
-dtj() {
+DenoTest2() {
   deno test -A --watch --import-map import_map.json
 }
 
@@ -27,6 +27,6 @@ dtj() {
 
 
 # UPDATE DENO
-denoup() {
+DenoUp() {
   sudo deno upgrade
 }
