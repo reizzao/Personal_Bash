@@ -1,0 +1,8 @@
+# GOLANG --
+
+# Run all tests - root -- roda todos tests apartir da pasta raiz e seus subDiretorios
+GoTest() {
+  go test ./...
+}
+
+#
