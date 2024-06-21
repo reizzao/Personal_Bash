@@ -5,4 +5,10 @@ GoTest() {
   go test ./...
 }
 
+GoClean() {
+  go clean -cache
+  go clean -modcache
+  export GOPROXY=direct
+}
+
 #
