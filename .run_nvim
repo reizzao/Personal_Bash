@@ -7,3 +7,10 @@ alias onvim="cd $HOME/.config/nvim"
 # VIM
 export ovim="$HOME/.vim" # TODO
 export clvim="$HOME/.config/lvim" # TODO
+
+# -- FUNCOES
+
+# fechar terminal
+ee() {
+  exit
+}
