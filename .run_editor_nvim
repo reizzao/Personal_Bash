@@ -1,7 +1,7 @@
 # NVIM
 
 alias n="nvim"
-alias onvim="cd $HOME/.config/nvim"
+alias ovim="cd $HOME/.config/nvim/" # NVIM OPEN CONFIGS
 
 
 # VIM

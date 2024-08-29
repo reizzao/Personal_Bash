@@ -18,11 +18,11 @@ if [ -f $HOME/x/PC/_Personal_Bash_/.run_editores ]; then
 fi
 
 if [ -f $HOME/x/PC/_Personal_Bash_/.run_vscode ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_vscode
+    . $HOME/x/PC/_Personal_Bash_/.run_editor_vscode
 fi
 
 if [ -f $HOME/x/PC/_Personal_Bash_/.run_nvim ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_nvim
+    . $HOME/x/PC/_Personal_Bash_/.run_editor_nvim
 fi
 
 if [ -f $HOME/x/PC/_Personal_Bash_/.reconhecer_pacotes_dev ]; then

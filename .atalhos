@@ -1,8 +1,17 @@
-
 # ATALHOS
-alias obases="cd $HOME/x/_github_rz_/"
-alias omusic="cd $HOME/x/_github_rz_/music/"
-alias opgm="cd $HOME/x/_github_rz_/_Pgm_Universal/"
-alias onvim="cd $HOME/.config/nvim/"
-alias odart="cd $HOME/x/_github_rz_/dart/"
-alias ots="cd $HOME/x/_github_rz_/typescript/"
+
+# MASTERS
+export GITS_RZ="$HOME/x/_github_rz_"
+
+# USES
+
+
+# PROJETOS
+alias opgm="cd $GITS_RZ/pgm" # PGM
+alias otest="cd $GITS_RZ/test" # Meus Projetos_Tests
+
+# alias obases="cd $HOME/x/_github_rz_/"
+# alias omusic="cd $HOME/x/_github_rz_/music/"
+# alias onvim="cd $HOME/.config/nvim/"
+# alias odart="cd $HOME/x/_github_rz_/dart/"
+# alias ots="cd $HOME/x/_github_rz_/typescript/"
