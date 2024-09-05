@@ -5,10 +5,12 @@ GoTest() {
   go test ./...
 }
 
-GoClean() {
+GoLib() {
   go clean -cache
   go clean -modcache
   export GOPROXY=direct
+  go mod tidy && go get $1
+  # -- add no chamado o desta funcao o endereco da url onde esta o pacote.
 }
 
 #
