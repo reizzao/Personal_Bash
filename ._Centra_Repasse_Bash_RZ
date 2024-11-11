@@ -9,44 +9,44 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$"
 # CHAMAR TODOS ARQUIVOS DE RUN LINGUAGENS
 # -- Somente este arquivo esta sendo chamado no bashrc - e daqui chamara os outros personalizados por linguagens
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.atalhos ]; then
-    . $HOME/x/PC/_Personal_Bash_/.atalhos
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.atalhos ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.atalhos
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.run_editores ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_editores
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_editores ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.run_editores
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.run_vscode ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_editor_vscode
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_vscode ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.run_editor_vscode
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.run_nvim ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_editor_nvim
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_nvim ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.run_editor_nvim
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.reconhecer_pacotes_dev ]; then
-    . $HOME/x/PC/_Personal_Bash_/.reconhecer_pacotes_dev
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.reconhecer_pacotes_dev ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.reconhecer_pacotes_dev
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.run_git ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_git
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_git ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.run_git
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.run_deno ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_deno
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_deno ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.run_deno
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.run_kotlin ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_kotlin
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_kotlin ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.run_kotlin
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.run_java ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_java
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_java ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.run_java
 fi
 
-if [ -f $HOME/x/PC/_Personal_Bash_/.run_golang ]; then
-    . $HOME/x/PC/_Personal_Bash_/.run_golang
+if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_golang ]; then
+    . $HOME/_my_rzj_/_Personal_Bash_/.run_golang
 fi
 
 # CONFIGS DO .VIMRC ESTAO NO ARQUIVO PERSONALIZADO BASH EM : /$HOME/x/Personal_Bash/.bash_person_rzj
@@ -60,7 +60,7 @@ fi
 
 # ESSENCIAIS
 alias propag="source ~/.bashrc"
-alias obash="cd $HOME/x/PC/_Personal_Bash_/"
+alias obash="cd $HOME/_my_rzj_/_Personal_Bash_/"
 
 # ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
 # export cbash="$HOME/x/Personal_Bash"

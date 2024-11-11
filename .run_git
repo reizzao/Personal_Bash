@@ -1,6 +1,6 @@
 # GITS
 
-export git_repos="$HOME/x/_github_rz_/"
+export git_repos="$HOME/_my_rzj_/"
 
 ogit() {
   cd $git_repos && ls -a
