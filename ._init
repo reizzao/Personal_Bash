@@ -49,7 +49,7 @@ if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_golang ]; then
     . $HOME/_my_rzj_/_Personal_Bash_/.run_golang
 fi
 
-# CONFIGS DO .VIMRC ESTAO NO ARQUIVO PERSONALIZADO BASH EM : /$HOME/x/Personal_Bash/.bash_person_rzj
+# CONFIGS DO .VIMRC ESTAO NO ARQUIVO PERSONALIZADO BASH EM : /$HOME/x/Personal_Bash/._init
 # explorador arquivos >> NERDTree :: c-n
 # MUDAR LOCAL VIM_RC :: PARA PASTA ~/Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
 # export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
