@@ -1,10 +1,13 @@
 # GITS
 
-export git_repos="$HOME/_my_rzj_/"
 
 ogit() {
   cd $git_repos && ls -a
   # abrir diretorios de repositorios git no pc e ja listar as pastas dentro
+}
+
+gatt() {
+  git pull && git push && git merge
 }
 
 delete_brach() {
