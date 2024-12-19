@@ -1,4 +1,12 @@
+# _INIT
 
+# TEST_INIT
+Ola() {
+  echo "Olá Mundo 10 !"
+}
+
+# ESSENCIAIS
+alias propag="source ~/.bashrc"
 
 # CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
 stty -ixon
@@ -10,92 +18,49 @@ parse_git_branch() {
 
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$"
 
+
+# CHAMAR OS OUTROS BASHS
+
 # CHAMAR TODOS ARQUIVOS DE RUN LINGUAGENS
 # -- Somente este arquivo esta sendo chamado no bashrc - e daqui chamara os outros personalizados por linguagens
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.atalhos ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.atalhos
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.atalhos ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.atalhos
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_editores ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.run_editores
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.run_editores ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.run_editores
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_vscode ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.run_editor_vscode
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.run_vscode ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.run_editor_vscode
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_nvim ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.run_editor_nvim
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.run_nvim ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.run_editor_nvim
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.reconhecer_pacotes_dev ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.reconhecer_pacotes_dev
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.reconhecer_pacotes_dev ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.reconhecer_pacotes_dev
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_git ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.run_git
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.run_git ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.run_git
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_deno ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.run_deno
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.run_deno ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.run_deno
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_kotlin ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.run_kotlin
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.run_kotlin ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.run_kotlin
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_java ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.run_java
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.run_java ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.run_java
 fi
 
-if [ -f $HOME/_my_rzj_/_Personal_Bash_/.run_golang ]; then
-    . $HOME/_my_rzj_/_Personal_Bash_/.run_golang
+if [ -f $HOME/$MY_BASH_DIR_SCRIPTS/.run_golang ]; then
+    . $HOME/$MY_BASH_DIR_SCRIPTS/.run_golang
 fi
-
-# CONFIGS DO .VIMRC ESTAO NO ARQUIVO PERSONALIZADO BASH EM : /$HOME/x/Personal_Bash/._init
-# explorador arquivos >> NERDTree :: c-n
-# MUDAR LOCAL VIM_RC :: PARA PASTA ~/Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
-# export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
-# export MYVIMRC='~/.config/nvim/init.lua'
-# apontando o arquivo init - se for conforme a extensao em uso .vim ou .lua e depois propag.
-
-# export MYVIMRC='~/.vim/.vimrc'  # apontando caminho do vimrc que configura o vim.
-
-# ESSENCIAIS
-alias propag="source ~/.bashrc"
-alias obash="cd $HOME/_my_rzj_/_Personal_Bash_/"
-
-# ACESSOS COM CD $var:: Configurar com 'c' de explorer antes do <artefato> :: acessar: cd $oApelido
-# export cbash="$HOME/x/Personal_Bash"
-
-# ATALHOS
-alias e="exit"
-
-# RUN PACOTES SISTEM
-# atualizar sudo apt get
-update() {
-  sudo apt update
-  sudo apt upgrade -y
-  sudo apt autoremove -y
-  sudo apt autoclean
-  sudo apt clean
-}
-
-# FUNCOES_SISTEM
-
-RemoveDir() {
-  sudo rm -r $1
-  # remove diretorios como super_usuario
-}
-
-lf() {
-  compgen -A function
-  # listar todas funcoes no shell
-}
-
-lfn() {
-  set | grep $1
-  # listar todas funcoes por nome_passado : lfn "Deno"
-}
 
